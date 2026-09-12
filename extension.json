@@ -1,0 +1,38 @@
+{
+	"name": "SaintapediaCargoEmbed",
+	"version": "0.1.0",
+	"author": [
+		"Saintapedia"
+	],
+	"url": "https://github.com/Saintapedia/SaintapediaCargoEmbed",
+	"descriptionmsg": "saintapediacargoembed-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.39",
+		"extensions": {
+			"Cargo": ">= 3.0"
+		}
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "MediaWiki\\Extension\\SaintapediaCargoEmbed\\MiniDrilldown\\Hooks::onParserFirstCallInit"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\SaintapediaCargoEmbed\\": "includes/"
+	},
+	"MessagesDirs": {
+		"SaintapediaCargoEmbed": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.SaintapediaCargoEmbed.mini.styles": {
+			"styles": [
+				"ext.SaintapediaCargoEmbed.mini.css"
+			],
+			"localBasePath": "modules",
+			"remoteExtPath": "SaintapediaCargoEmbed/modules"
+		}
+	},
+	"manifest_version": 2
+}

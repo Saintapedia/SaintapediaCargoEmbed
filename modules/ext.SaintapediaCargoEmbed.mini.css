@@ -1,0 +1,54 @@
+/*
+ * Mini-embed shell. Reuses the CSS custom properties already defined by
+ * ext.SaintapediaDrilldown.css (--cargo-filter-bg, --cargo-chip-*, --cargo-radius,
+ * etc.) — this file only adds the card framing and the "locked chip" look
+ * that Special:Drilldown itself never needed.
+ */
+
+.cargo-drilldown-mini {
+	display: block;
+	max-width: 420px;
+	border: 1px solid var( --cargo-filter-border, #c8d0d8 );
+	border-radius: var( --cargo-radius, 8px );
+	padding: 0.75em 1em;
+	margin: 1em 0;
+	background: var( --cargo-filter-bg, #f9fafb );
+}
+
+.cargo-drilldown-mini .cargo-chip-locked {
+	opacity: 0.85;
+	cursor: default;
+	/* deliberately no ::after "x" — see Renderer::renderLockedChips */
+}
+
+.cargo-drilldown-mini-facets .cargo-mini-facet-group {
+	margin-bottom: 0.5em;
+}
+
+.cargo-drilldown-mini-facets ul {
+	list-style: none;
+	margin: 0.25em 0 0;
+	padding: 0;
+}
+
+.cargo-drilldown-mini-facet-count,
+.cargo-mini-facet-count {
+	color: var( --cargo-chip-text, #0645ad );
+	opacity: 0.7;
+	font-size: 0.9em;
+}
+
+.cargo-drilldown-mini-results {
+	margin: 0.5em 0;
+	padding-left: 1.25em;
+}
+
+.cargo-drilldown-mini-seeall {
+	margin: 0.5em 0 0;
+	font-size: 0.9em;
+}
+
+.cargo-drilldown-mini-error {
+	color: #a00;
+	font-style: italic;
+}

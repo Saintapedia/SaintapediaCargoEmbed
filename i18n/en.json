@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saintapedia"
+		]
+	},
+	"saintapediacargoembed-desc": "Embeddable mini Cargo drilldown widget with locked filters",
+	"saintapediacargoembed-seeall": "See all {{PLURAL:$1|$1 result|$1 results}} →"
+}
